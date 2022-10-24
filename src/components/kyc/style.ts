@@ -18,12 +18,12 @@ const styles = StyleSheet.create({
   iconKey: {
     height: 24,
     width: 24,
-    marginHorizontal: 7,
+    marginHorizontal: 10,
   },
   iconKeyNewlyCreatedAcc: {
     height: 42,
     width: 42,
-    marginHorizontal: 7,
+    marginHorizontal: 10,
   },
   fillDataText: {
     flexShrink: 1,
