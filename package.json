@@ -6,7 +6,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prepare": "bob build"
   },
   "dependencies": {
     "react": "18.1.0",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
+    "@react-native-community/bob": "^0.17.1",
     "@react-native-community/eslint-config": "^2.0.0",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^26.0.23",
@@ -40,5 +42,35 @@
       "json",
       "node"
     ]
-  }
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "dist",
+    "targets": [
+      "module",
+      "typescript"
+    ]
+  },
+  "main": "dist/module/components/index.js",
+  "module": "dist/module/components/index.js",
+  "react-native": "src/components/index.ts",
+  "types": "dist/typescript/components/index.d.ts",
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "description": "Flip UI Kit V2 package",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flip-id/flip-ui-kit-v2.git"
+  },
+  "keywords": [
+    "@flip.id/ui-kit-v2"
+  ],
+  "author": "Mohamad Fachrur Ridwan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flip-id/flip-ui-kit-v2/issues"
+  },
+  "homepage": "https://github.com/flip-id/flip-ui-kit-v2#readme"
 }
