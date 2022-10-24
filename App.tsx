@@ -4,7 +4,7 @@ import {View, StyleSheet, Text} from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Demo UI Kit V2</Text>
+      <Text>Demo @flip.id/ui-kit-v2</Text>
     </View>
   );
 }
