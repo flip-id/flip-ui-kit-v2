@@ -50,7 +50,7 @@ class RadioButton extends Component<RadioButtonProps, RadioButtonState> {
                       ? styles.radioCircleSelected
                       : disabled === false
                       ? styles.radioCircle
-                      : styles.radioCircleDisabled
+                      : styles.radioCircleSelected
                   }
                   onPress={() => {
                     this.setState({
